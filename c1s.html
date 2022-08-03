@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+            <html lang="es">
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Clase1S - Mesa 8</title>
+            </head>
+            <body>
+            <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+            <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+            <div id="root"> </div>
+            
+            <script type="text/javascript">
+            
+            /* Tu código React va aquí
+                No olvides que el elemento padre debe llamarse igual que el elemento que espera el render */
+
+            const create = React.createElement;
+            
+            const myH1 = create('h1',{key: 1},'Con lo visto hasta ahora');
+            const myH2 = create('h2',{key: 2}, 'Replica este HTML' );
+            const myH3 = create('h3',{key: 3}, 'usando' );
+            const myH4 = create('h4',{key: 4}, 'React.js' );
+            const myFooter = create('footer',{key: 5}, 'Suerte!' );
+            
+            const div_el = create('div',null,[myH1, myH2, myH3, myH4, myFooter])
+
+            
+            ReactDOM.render(div_el, document.getElementById("root"));
+            </script>
+            </body>
+            </html>
